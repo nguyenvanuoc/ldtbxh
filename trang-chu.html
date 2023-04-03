@@ -209,10 +209,10 @@
                             (ngày 14/01/2023).</div>
                         </div>
                     </div>
-                    <a href="#" class="banner mb-2">
+                    <a href="#modalLichTiepDan" data-toggle="modal" class="banner mb-2">
                         <img src="assets/uploads/banners/1.png" alt="">
                     </a>
-                    <a href="#" class="banner">
+                    <a href="#modalLichTiepDan" data-toggle="modal"  class="banner">
                         <img src="assets/uploads/banners/2.png" alt="">
                     </a>
                 </div>
@@ -233,7 +233,7 @@
             <div class="main-title">
                 <div class="title">
                     <span class="icon isax-document-text"></span>
-                    <h2 class="text-m">Tin tức</h2>
+                    <h2 class="text-m"><a href="#">Tin tức</a></h2>
                 </div>
                 <ul class="list-cat">
                     <li class="active"><a href="#">Địa phương - cơ sở</a></li>
@@ -384,7 +384,7 @@
             <div class="main-title">
                 <div class="title">
                     <span class="icon isax-video-vertical"></span>
-                    <h2 class="text-m">ĐA PHƯƠNG TIỆN</h2>
+                    <h2 class="text-m"><a href="#">    ĐA PHƯƠNG TIỆN</a></h2>
                 </div>
                 <ul class="list-cat">
                     <li class="active"><a href="#">Video</a></li>
@@ -420,13 +420,23 @@
                     </a>
                 </div>
             </div>
-            <a href="#" class="banner my-4">
-                <img src="assets/uploads/banners/3.jpg" alt="">
-            </a>
+            <div class="list-banner">
+                <div class="item">
+                    <a href="#" class="banner my-4">
+                        <img src="assets/uploads/banners/3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="banner my-4">
+                        <img src="assets/uploads/banners/3.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            
             <div class="main-title">
                 <div class="title">
                     <span class="icon isax-document-text"></span>
-                    <h2 class="text-m">HỆ THỐNG VĂN BẢN</h2>
+                    <h2 class="text-m"><a href="#"> HỆ THỐNG VĂN BẢN</a></h2>
                 </div>
                 <div class="input-search">
                     <span class="icon isax-search-normal-11"></span>
@@ -612,7 +622,7 @@
             <div class="main-title">
                 <div class="title">
                     <span class="icon isax-buildings-2"></span>
-                    <h2 class="text-m">HỆ THỐNG THÔNG TIN BỘ VỚI NGƯỜI DÂN VÀ DOANH NGHIỆP</h2>
+                    <h2 class="text-m"><a href="#">    HỆ THỐNG THÔNG TIN BỘ VỚI NGƯỜI DÂN VÀ DOANH NGHIỆP</a></h2>
                 </div>
             </div>
             <div class="htvb-box mb-4">
@@ -901,6 +911,21 @@
         </div>
         <div class="copyright">Bản quyền thuộc về Bộ Lao động - Thương binh và Xã hội (LĐTBXH)</div>
     </div>
+    <div class="modal" id="modalLichTiepDan"  role="dialog">
+        <div class="modal-dialog" role="document" style="width:100%;max-width: 991px;">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <h5 class="modal-title">Lịch tiếp dân</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="http://www.molisa.gov.vn/Upload/tin%20tuc.2/lichtiepcongdan2023-edit.png" class="fullw" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         Highcharts.chart('chart', {
             chart: {
@@ -962,6 +987,14 @@
             cssEase: 'linear'
         });
         $('.list-partners').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows:false,
+        });
+        $('.list-banner').slick({
             dots: false,
             infinite: true,
             speed: 500,

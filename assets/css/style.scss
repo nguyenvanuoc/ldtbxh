@@ -91,6 +91,9 @@ a{
         font-weight: 600;
         text-transform: uppercase;
         margin: 0px;
+        >a{
+            color: #fff;
+        }
     }
     .icon{
         font-size: 24px;
@@ -100,6 +103,7 @@ a{
         list-style:none;
         margin: 0px;
         padding: 0px;
+        flex-wrap: wrap;
         li{
             border-left: 1px solid #fff;
             &:first-child{
@@ -146,6 +150,9 @@ a{
         }
     }
 }
+.section{
+    padding: 20px 0px;
+}
 .main-subtitle{
     position: relative;
     margin-bottom: 20px;
@@ -191,9 +198,6 @@ a{
     }
 
 
-}
-.section{
-    padding: 40px 0px;
 }
 
 
@@ -440,4 +444,41 @@ a{
 }
 .h1, h1{
     font-size: 32px;
+}
+
+.nav-tabs {
+    border-bottom: 0px;
+    background: transparent;
+}
+
+.nav-tabs:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.nav-tabs>li {
+    margin-bottom: 0px
+}
+
+.nav-tabs>li>a {
+    display: block;
+    padding: 7px 14px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-right: 0px;
+    color: $text;
+    font-weight: 600;
+    border: none
+}
+
+.nav-tabs>li>a:hover {
+    background: rgba(0,0,0,0.1)
+}
+
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover {
+    background: $main;
+    color: #fff;
+    border: none
 }
