@@ -2161,3 +2161,313 @@
         }
     }
 }
+
+.section-document{
+    ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .list-document-cat{
+        background: #f5e8d7;
+        padding: 10px;
+        text-align: left;
+        >li{
+
+            >a{
+                font-weight: bold;
+            }
+        }
+        li{
+            position: relative;
+            padding-left: 20px;
+
+        }
+        .down{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 3px;
+            cursor:pointer;
+            left: 0px;
+            line-height: 20px;
+            text-align: center;
+            font-family: ap;
+            &:before{
+                content: "\ecb5";
+            }
+        }
+        ul{
+            display: none;
+        }
+        li.selected{
+            >.down{
+                &:before{
+                    content: "\ecb1";
+                }
+            }
+            >ul{
+                display: block;
+            }
+        }
+        a{
+            padding: 5px 10px;
+            display: block;
+            color:#372324;
+            &:hover{
+                color: $main;
+            }
+        }
+    }
+    .document-tabs{
+        width: 100%;
+        background: $main;
+        display: flex;
+        >li{
+            >a{
+                padding: 10px 20px;
+                display: block;
+                color:#fff;
+                position: relative;
+                &:hover{
+                    background: fade(#000,10%);
+                }
+
+            }
+
+            &.active >a, a.active{
+                font-weight: bold;
+                &:before{
+                    position: absolute;
+                    content: "";
+                    height: 2px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    background: #16d5e6;
+                }
+            }
+
+        }
+    }
+    .info{
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 20px;
+        p{
+            margin-bottom: 10px;
+        }
+        .key{
+            display: table-cell;
+            width: 160px;
+            vertical-align: top;
+            text-align: right;
+            padding-right: 20px;
+            font-weight: 600;
+        }
+    }
+    .tab-content{
+        box-shadow: 0px 5px 10px rgba(#000,0.1);
+        padding: 20px;
+    }
+    .table{
+        td{
+            border:1px solid $border !important;
+        }
+        th{
+            background: #eca440;
+            color: #fff;
+            border:1px solid #eca440;
+        }
+    }
+    .input-search{
+        display: flex;
+        column-gap: 7px;
+        width: 100%;
+        margin-bottom: 10px;
+        .input-icon-left{
+            flex: 1;
+            min-width: 0px;
+        }
+    }
+    .btn-search-adv{
+        border: 1px solid $border;
+    }
+    .box-search-adv{
+        padding: 20px;
+        background-color: #f5f5f5;
+        margin: 20px 0px;
+        display: none;
+        &.show{
+            display: block;
+        }
+
+    }
+}
+
+.join-status {
+    display: inline-block;
+    padding: 5px 20px;
+    border: 2px solid #f44336;
+    color: #f44336;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    transform: rotate(45deg)
+}
+
+.join-status.-joined {
+    border-color: #4CAF50;
+    color: #4CAF50
+}
+
+
+.thi-truong-lao-dong {
+    .item {
+        margin-bottom: 20px;
+        text-align: center;
+
+        .title {
+            color: $text;
+            display: block;
+            font-weight: 500;
+            height: 40px;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+
+            &:hover {
+                color: $main;
+            }
+        }
+
+        .img-bg {
+            margin: auto;
+            height: 135px;
+            width: 105px;
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+.list-link{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.vanphamphapquy {
+
+    .box-sidebar {
+        ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        .body {
+            padding: 0px;
+        }
+
+        .g-sb-tt {
+            padding: 7px 10px;
+            background: #439bf1;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .vanban-menu {
+            li {
+                a {
+
+                    display: block;
+                    padding: 7px 10px;
+                    color: #232425;
+
+                    &:hover {
+                        color: $main;
+                    }
+                }
+
+                &.active {
+                    >a {
+                        color: $main;
+                        background: #f6f7f8;
+                    }
+                }
+            }
+
+            .vb-icon {
+                margin-right: 3px;
+            }
+
+            >li {
+                ul {
+                    display: none;
+                }
+
+                &.selected {
+                    >ul {
+                        display: block;
+                    }
+                }
+
+                >a {
+                    background: $main;
+                    color: #fff;
+                    font-weight: bold;
+                }
+
+                &:hover {
+                    >a {
+                        color: #fff;
+                        background: darken($main, 10);
+                    }
+                }
+            }
+        }
+    }
+
+    .banner {
+        padding: 0px;
+        border-radius: 0px;
+        border: 0px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .list-link {
+        >li {
+            >a {
+                display: block;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.table-vanban {
+    width: 100%;
+    overflow: auto;
+
+    .table {
+        border: 1px solid #ddd;
+
+        th {
+            background: $main;
+            color: #fff;
+            text-align: center;
+            border: 1px solid rgba(#000, 0.1);
+        }
+
+        td {
+            border-right: 1px solid #ddd;
+            vertical-align: middle;
+        }
+    }
+}
+

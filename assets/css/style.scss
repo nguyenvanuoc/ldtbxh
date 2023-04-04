@@ -482,3 +482,20 @@ a{
     color: #fff;
     border: none
 }
+
+.input-icon-left{
+    position: relative;
+    .form-control{
+        padding-left: 30px;
+    }
+    .icon{
+        width: 30px;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--desc-color);
+    }
+}
