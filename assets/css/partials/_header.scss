@@ -135,7 +135,7 @@
             >a{
                 color: #fff;
                 text-transform: uppercase;
-                padding: 12px 20px;
+                padding: 10px 10px;
             }
         }
         li{
@@ -148,6 +148,17 @@
         }
         .dropdown-menu{
             margin: 0px;
+            min-width: 200px;
+            white-space: nowrap;
+            a{
+                color: $text;
+
+            }
+            li{
+                &:hover,a:hover{
+                    background-color: $bg;
+                }
+            }
         }
         a{
             display: block;

@@ -263,300 +263,161 @@
                 </div>
                 <div class="main-left col-md-9 col-sm-9 col-12">
                 
-                    <div class="quan-ly-du-an">
-                        <div class="box-dtvb">
-                            <div class="box-form">
-                                <div class="input-search">
-                                    <input class="form-control" id="Keywords" name="Keywords" placeholder="Nhập nội dung văn bản cần tìm..." type="text"
-                                        value="">
-                                    <button class="btn btn-primary">
-                                        <span class="isax-search-normal1">
-                                    
-                                        </span>
-                                    
-                                        Tìm kiếm
-                                    </button>
-                                </div>
-                                <div class="top-actions" style="margin-bottom: 0px;">
-                                    <button class="btn btn-second collapsed" data-toggle="collapse" data-target="#formFilter" aria-expanded="false"><span
-                                            class="-ap icon-repo"></span> Tìm kiếm nâng cao <span class="-ap icon_fluent_caret_down_24_filled"></span></button>
-                                    
-                                    <p>Tổng số văn bản <strong class="red">1160</strong></p>
-                                </div>
-                                <div class="filter-form mt-3 px-3 py-2 collapse" style="padding: 0px; height: 0px;" id="formFilter"
-                                    aria-expanded="false">
-                                    <div class="note red">(gõ nội dung vào một trong các ô tương ứng và nhấn nút Tìm kiếm)</div>
-                                    <div class="form-group">
-                                        <label for="id" class="label-text">Số hiệu</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="Số hiệu" id="id">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-text" for="content">Trích yếu nội dung</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="Trích yếu nội dung" id="content">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-text">Ngày ban hành</label>
-                                    </div>
-                                    <div class="form-group -date">
-                                        <label class="label-text" for="fromdateNBH">Từ</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="fromdateNBH">
-                                        </div>
-                                        <label for="todateNBH" class="label-text -date">Đến</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="todateNBH">
-                                        </div>
-                                    </div>
-                                    <div class="form-group ">
-                                        <label class="label-text">Ngày hiệu lực</label>
-                                    </div>
-                                    <div class="form-group -date">
-                                        <label class="label-text" for="fromdateNHL">Từ</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="fromdateNHL">
-                                        </div>
-                                        <label class="label-text -date" for="todateNHL">Đến</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="todateNHL">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-text" for="selCat">Lĩnh vực</label>
-                                        <div class="input">
-                                            <div class="select-custom">
-                                                <select name="" id="selCat" class="form-control">
-                                                    <option selected="selected" value="">-Tất cả-</option>
-                                                    <option value="34">Báo chí</option>
-                                                    <option value="35">Xuất bản</option>
-                                                    <option value="36">Bưu chính</option>
-                                                    <option value="37">Viễn thông</option>
-                                                    <option value="38">CNTT, điện tử</option>
-                                                    <option value="55">An toàn thông tin</option>
-                                                    <option value="39">Cơ cấu tổ chức</option>
-                                                    <option value="40">Lĩnh vực khác</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-text" for="selForm">Hình thức văn bản</label>
-                                        <div class="input">
-                                            <div class="select-custom">
-                                                <select name="" id="selForm" class="form-control">
-                                                    <option selected="selected" value="">-Tất cả-</option>
-                                                    <option value="34">Báo chí</option>
-                                                    <option value="35">Xuất bản</option>
-                                                    <option value="36">Bưu chính</option>
-                                                    <option value="37">Viễn thông</option>
-                                                    <option value="38">CNTT, điện tử</option>
-                                                    <option value="55">An toàn thông tin</option>
-                                                    <option value="39">Cơ cấu tổ chức</option>
-                                                    <option value="40">Lĩnh vực khác</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-text" for="agency">Cơ quan ban hành</label>
-                                        <div class="input">
-                                            <div class="select-custom">
-                                                <select name="" id="agency" class="form-control">
-                                                    <option selected="selected" value="">-Tất cả-</option>
-                                                    <option value="34">Báo chí</option>
-                                                    <option value="35">Xuất bản</option>
-                                                    <option value="36">Bưu chính</option>
-                                                    <option value="37">Viễn thông</option>
-                                                    <option value="38">CNTT, điện tử</option>
-                                                    <option value="55">An toàn thông tin</option>
-                                                    <option value="39">Cơ cấu tổ chức</option>
-                                                    <option value="40">Lĩnh vực khác</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="actions form-group">
-                                        <label class="label-text"></label>
-                                        <div class="input">
-                                            <button class="btn-submit btn-success btn">Tìm kiếm</button>
-                                            <button class="btn-cancel btn btn-default">Hủy bỏ</button>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="project-detail">
+                        <div class="head">
+                            <h1 class="title">Chương trình mục tiêu Quốc gia giảm nghèo bền vững 2010</h1>
+                            <p class="subtitle">Thời gian thực hiện đến </p>
+                        </div>
+                        <ul class="tabs-line nav">
+                            <li class="nav-item"><a data-toggle="tab" class="nav-link active " href="#thongtinchung" aria-expanded="true">Thông tin chung</a></li>
+                            <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#noidungtomtat" aria-expanded="false">Nội dung tóm tắt</a></li>
+                            <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#vanbanphapquy" aria-expanded="false">Văn bản pháp quy</a></li>
+                            <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#hosolienquan">Hồ sơ liên quan</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="thongtinchung">
+                                <table class="tb-detail">
+                                    <tbody>
+                                        <tr>
+                                            <td class="key">Tên chương trình:</td>
+                                            <td class="value">Chương trình mục tiêu Quốc gia giảm nghèo bền vững 2010</td>
+                                        </tr>
+                    
+                    
+                    
+                                        <tr>
+                                            <td class="key">Giai đoạn thực hiện:</td>
+                                            <td class="value">3 năm - 5 năm</td>
+                                        </tr>
+                    
+                                        <tr>
+                                            <td class="key">Phạm vi thực hiện:</td>
+                                            <td class="value">Toàn quốc</td>
+                                        </tr>
+                    
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane" id="noidungtomtat">
+                                <p style="text-align: justify;">
+                                    a)&nbsp;Mục tiêu chung:&nbsp;Cải thiện và từng bước nâng cao điều kiện sống của người nghèo,&nbsp;ưu
+                                    tiên người nghèo là đồng bào dân tộc thiểu số, người nghèo thuộc huyện nghèo, xã biên giới, xã an toàn
+                                    khu, xã, thôn, bản đặc biệt khó khăn, vùng bãi ngang ven biển và hải đảo;&nbsp;tạo sự chuyển biến mạnh
+                                    mẽ, toàn diện về công tác giảm nghèo ở các vùng nghèo; góp phần thu hẹp khoảng cách chênh lệch về
+                                    mức sống giữa thành thị và nông thôn, giữa các vùng, các dân tộc và các nhóm dân cư.</p>
+                                <p style="text-align: justify;">
+                                    b) Mục tiêu cụ thể:</p>
+                                <p style="text-align: justify;">
+                                    - Thu nhập bình quân đầu người của hộ nghèo cả nước tăng lên 1,6 lần so với cuối năm 2011 (riêng các hộ
+                                    nghèo ở các huyện nghèo, xã nghèo, thôn, bản đặc biệt khó khăn vùng dân tộc thiểu số và miền núi tăng
+                                    gấp 2,5 lần); tỷ lệ hộ nghèo cả nước giảm bình quân 2%/năm (riêng các huyện, xã nghèo giảm 4%/năm) theo
+                                    chuẩn nghèo quốc gia giai đoạn 2011 - 2015.</p>
+                                <p style="text-align: justify;">
+                                    - Thực hiện đồng bộ, có hiệu quả các chính sách giảm nghèo để cải thiện điều kiện sống của người nghèo,
+                                    trước hết là về y tế, giáo dục, văn hoá, nước sinh hoạt, nhà ở; người nghèo tiếp cận ngày càng thuận lợi
+                                    hơn với các dịch vụ xã hội cơ bản.</p>
+                                <p style="text-align: justify;">
+                                    - Cơ sở hạ tầng kinh tế - xã hội ở các huyện, xã nghèo, thôn, bản đặc biệt khó khăn được tập trung đầu
+                                    tư đồng bộ theo tiêu chí nông thôn mới, trước hết là hạ tầng thiết yếu như: giao thông, điện,
+                                    nước sinh hoạt…</p>
+                                <p style="text-align: justify;">
+                                    c) Các chỉ tiêu chủ yếu cần đạt được đến năm 2015:</p>
+                                <p style="text-align: justify;">
+                                    - Phấn đấu 10% số huyện nghèo thoát khỏi tình trạng đặc biệt khó khăn theo Nghị quyết số 30a/2008/NQ-CP
+                                    ngày 27 tháng 12 năm 2008 của Chính phủ về Chương trình hỗ trợ giảm nghèo nhanh và bền vững đối với 62
+                                    huyện nghèo (sau đây viết tắt là Nghị quyết 30a); 50% số xã đặc biệt khó khăn vùng bãi ngang ven biển và
+                                    hải đảo và 30% số xã, thôn bản đặc biệt khó khăn vùng dân tộc thiểu số và miền núi thoát khỏi tình trạng
+                                    đặc biệt khó khăn theo tiêu chí do Thủ tướng Chính phủ quy định.</p>
+                                <p style="text-align: justify;">
+                                    - Đầu tư xây dựng cơ sở hạ tầng phục vụ phát triển sản xuất, kinh doanh và dân sinh phù hợp quy hoạch
+                                    dân cư và quy hoạch sản xuất, kinh doanh. Phấn đấu đến năm 2015:</p>
+                                <p style="text-align: justify;">
+                                    + 85% xã có đường ô tô đến trung tâm xã được nhựa hóa hoặc bê tông hóa theo tiêu chuẩn kỹ thuật của Bộ
+                                    Giao thông - Vận tải;</p>
+                                <p style="text-align: justify;">
+                                    + 60% thôn, bản có đường trục giao thông được cứng hoá theo tiêu chuẩn kỹ thuật của Bộ Giao thông - Vận
+                                    tải;</p>
+                                <p style="text-align: justify;">
+                                    + 100% trung tâm xã có điện; trên 90% thôn, bản có điện phục vụ sinh hoạt và sản xuất, kinh doanh;</p>
+                                <p style="text-align: justify;">
+                                    + Các công trình thủy lợi nhỏ được đầu tư đáp ứng 80% nhu cầu tưới tiêu cho diện tích cây trồng hằng
+                                    năm.</p>
+                                <p style="text-align: justify;">
+                                    - Thu nhập của hộ nghèo tham gia mô hình tăng 15 - 20%/năm; bình quân mỗi năm có 10% hộ tham gia mô hình
+                                    thoát nghèo.</p>
+                                <p style="text-align: justify;">
+                                    - 100% cán bộ, công chức xã, trưởng thôn, bản và cán bộ đoàn thể được tập huấn về: kiến thức, kỹ năng
+                                    quản lý và tổ chức thực hiện các chương trình, chính sách, dự án; lập kế hoạch có sự tham gia của người
+                                    dân; phát triển cộng đồng.</p>
+                    
+                            </div>
+                            <div class="tab-pane" id="vanbanphapquy">
+                    
+                            </div>
+                            <div class="tab-pane " id="hosolienquan">
+                                <table class="table">
+                                    <thead id="headhoso">
+                                        <tr>
+                                            <th>Tên hồ sơ</th>
+                                            <th data-breakpoints="xs">Ngày </th>
+                                            <th data-breakpoints="xs">Trích yếu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                    
+                                    </tbody>
+                    
+                                </table>
                             </div>
                         </div>
-                        <div class="project-detail">
-                            <div class="head">
-                                <h1 class="title">Chương trình mục tiêu quốc gia</h1>
-                                <p class="subtitle">Chương trình 1 giai đoạn từ 22/03/3017 đến 22/03/2018</p>
-                            </div>
-                            <ul class="tabs nav">
-                                <li class="nav-item active "><a data-toggle="tab" class="nav-link active" href="#chienluoc">Chiến lược</a></li>
-                                <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#chuongtrinh">Chương trình</a></li>
-                                <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#dean">Đề án</a></li>
-                                <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#duan">Dự án</a></li>
+                    
+                        <div class="news-related">
+                    
+                            <h2 class="title-main"><span>Chương trình dự án khác</span></h2>
+                            <ul class="list-news">
+                    
+                                <li>
+                                    <a href="/Pages/qlda/chitiet.aspx?DuAnID=1038">Chương trình mục tiêu quốc gia giảm nghèo bền vững giai
+                                        đoạn 2021-2025 </a>
+                                </li>
+                    
+                                <li>
+                                    <a href="/Pages/qlda/chitiet.aspx?DuAnID=1036">Chương trình hỗ trợ pháp lý cho doanh nghiệp nhỏ
+                                        và vừa của Bộ Lao động - Thương binh và Xã hội giai đoạn 2021 - 2025 </a>
+                                </li>
+                    
+                                <li>
+                                    <a href="/Pages/qlda/chitiet.aspx?DuAnID=1035">Chương trình “Bảo vệ và hỗ trợ trẻ em tương tác lành
+                                        mạnh, sáng tạo trên môi trường mạng giai đoạn 2021 - 2025” </a>
+                                </li>
+                    
+                                <li>
+                                    <a href="/Pages/qlda/chitiet.aspx?DuAnID=44">Chương trình mục tiêu quốc gia Việc làm và dạy nghề giai
+                                        đoạn 2012 -2015 </a>
+                                </li>
+                    
+                                <li>
+                                    <a href="/Pages/qlda/chitiet.aspx?DuAnID=41">Chương trình hành động quốc gia vì trẻ em 2012-2020 </a>
+                                </li>
+                    
                             </ul>
-                            <div class="tab-content tab-content-parent">
-                                <div class="tab-pane" id="chienluoc">
-                
-                                    <ul class="tabs-line nav">
-                                        <li class="active nav-item"><a data-toggle="tab" class="nav-link" href="#thongtinchung">Thông tin chung</a></li>
-                                        <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#noidungtomtat">Nội Tóm tắt</a></li>
-                                        <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#vanbanphapquy">Văn bản pháp quy</a></li>
-                                        <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#hosolienquan">Hồ sơ liên quan</a></li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div class="tab-pane active" id="thongtinchung">
-                                            <table class="tb-detail">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="key">Tên chương trình:</td>
-                                                        <td class="value">Dự thảo quốc gia</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="key">Cấp ban hành:</td>
-                                                        <td class="value">Bộ LĐTBXH</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="key">Tình trạng:</td>
-                                                        <td class="value"><label for="" class="label label-info">Còn hiệu lực</label>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="key">Giai đoạn thực hiện:</td>
-                                                        <td class="value">Giai đoạn 1</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="key">Đơn vị chủ trì:</td>
-                                                        <td class="value">Văn phòng Quốc Hội</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="key">Đơn vi phối hợp:</td>
-                                                        <td class="value">Văn phòng Quốc Hội</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="key">Ngân sách:</td>
-                                                        <td class="value">10.000đ</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="key">Phạm vị thực hiện:</td>
-                                                        <td class="value">Cấp bộ</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane active" id="chuongtrinh">
-                                    <div class="row">
-                                        <div class="col-sm-8 col-xs-12">
-                                            <div class="box-stage">
-                                                <h2 class="title">Chương trình mục tiêu quốc gia</h2>
-                                                <div class="stage">
-                                                    <a class="item">
-                                                        <span class="icon"></span>
-                                                        <span class="name">Chương trình 1</span>
-                                                        <span class="date">Giai đoạn 22/03/2017 - 22/03/2018</span>
-                                                    </a>
-                                                    <a class="item">
-                                                        <span class="icon"></span>
-                                                        <span class="name">Chương trình 1</span>
-                                                        <span class="date">Giai đoạn 22/03/2017 - 22/03/2018</span>
-                                                    </a>
-                                                    <a class="item">
-                                                        <span class="icon"></span>
-                                                        <span class="name">Chương trình 1</span>
-                                                        <span class="date">Giai đoạn 22/03/2017 - 22/03/2018</span>
-                                                    </a>
-                                                    <a class="item">
-                                                        <span class="icon"></span>
-                                                        <span class="name">Chương trình 1</span>
-                                                        <span class="date">Giai đoạn 22/03/2017 - 22/03/2018</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="box-stage">
-                                                <h2 class="title">Chương trình mục tiêu quốc gia</h2>
-                                                <div class="stage">
-                                                    <a class="item">
-                                                        <span class="icon"></span>
-                                                        <span class="name">Chương trình 1</span>
-                                                        <span class="date">Giai đoạn 22/03/2017 - 22/03/2018</span>
-                                                    </a>
-                                                    <a class="item">
-                                                        <span class="icon"></span>
-                                                        <span class="name">Chương trình 1</span>
-                                                        <span class="date">Giai đoạn 22/03/2017 - 22/03/2018</span>
-                                                    </a>
-                                                    <a class="item">
-                                                        <span class="icon"></span>
-                                                        <span class="name">Chương trình 1</span>
-                                                        <span class="date">Giai đoạn 22/03/2017 - 22/03/2018</span>
-                                                    </a>
-                                                    <a class="item">
-                                                        <span class="icon"></span>
-                                                        <span class="name">Chương trình 1</span>
-                                                        <span class="date">Giai đoạn 22/03/2017 - 22/03/2018</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4 col-xs-12">
-                                            <div class="sidebar-filter">
-                                                <div class="title">Giai đoạn</div>
-                                                <ul class="list">
-                                                    <li>
-                                                        <a href="#">
-                                                            <span class="check"></span> 1 năm - 2 năm
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span class="check"></span> 3 năm - 5 năm
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span class="check"></span> 5 năm - 10 năm
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span class="check"></span> Trên 10 năm
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="sidebar-filter">
-                                                <div class="title">Phạm vi thực hiện</div>
-                                                <ul class="list">
-                                                    <li class="active">
-                                                        <a href="#">
-                                                            <span class="check"></span> Toàn quốc
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span class="check"></span> Vùng địa lý
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span class="check"></span>Vùng kinh tế
-                                                        </a>
-                                                    </li>
-                
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    
                         </div>
-                
+                    
+                        <div class="navi-page">
+                            <ul class="pagination">
+                                <li class="page-item "><a class="page-link" href="#"><span
+                                            class="-ap icon_fluent_chevron_left_24_filled"></span></a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#"><span
+                                            class="-ap icon_fluent_chevron_right_24_filled"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    
                     </div>
                 </div>
             
