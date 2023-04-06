@@ -288,111 +288,153 @@
                                 </div>
                                 <div class="filter-form mt-3 px-3 py-2 collapse" style="padding: 0px; height: 0px;"
                                     id="formFilter" aria-expanded="false">
-                                    <div class="note red">(gõ nội dung vào một trong các ô tương ứng và nhấn nút Tìm
-                                        kiếm)</div>
-                                    <div class="form-group">
-                                        <label for="id" class="label-text">Số hiệu</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="Số hiệu" id="id">
+                                <div class="note red">(điền nội dung vào một trong các ô tương ứng và nhấn nút Tìm kiếm)</div>
+                                <div class="form-group">
+                                    <label for="txtTuKhoa" class="label-text">Từ khóa</label>
+                                    <div class="input">
+                                        <input id="txtTuKhoa" type="text" class="form-control" placeholder="Từ khóa, Tên, Trích yếu, Nội dung, ...">
+                                    </div>
+                                </div>
+                            
+                                <div class="form-group">
+                                    <label class="label-text" for="fromdateNBH">Văn bản</label>
+                                    <div class="input">
+                                        <input type="text" class="form-control" id="txtSoKyHieu" placeholder="Số ký hiệu">
+                                    </div>
+                                    <label for="ddlDonViBanHanh" class="label-text">Đơn vị ban hành</label>
+                                    <div class="input">
+                                        <div class="select-custom">
+                                            <select name="" id="ddlDonViBanHanh" class="form-control">
+                                                <option selected="selected" value="">-Tất cả-</option>
+                                
+                                                <option value="1">Bộ Lao động - Thương binh &amp; Xã hội</option>
+                                
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="label-text" for="content">Trích yếu nội dung</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="Trích yếu nội dung"
-                                                id="content">
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtNgayBanHanhTu" class="label-text">Ngày ban hành </label>
+                                    <div class="input">
+                                        <input type="text" class="form-control dateformat" placeholder="dd/mm/yyyy" id="txtNgayBanHanhTu">
+                                    </div>
+                                    <label for="txtNgayBanHanhDen" class="label-text -date ">Đến</label>
+                                    <div class="input">
+                                        <input type="text" class="form-control dateformat" placeholder="dd/mm/yyyy" id="txtNgayBanHanhDen">
+                                    </div>
+                                </div>
+                            
+                                <div class="form-group">
+                                    <label class="label-text" for="selCat">Lĩnh vực</label>
+                                    <div class="input">
+                                        <div class="select-custom">
+                                            <select name="" id="ddlLinhVuc" class="form-control">
+                                                <option selected="selected" value="">-Tất cả-</option>
+                            
+                                                <option value="15">An toàn lao động</option>
+                            
+                                                <option value="2">Lao động – tiền lương</option>
+                            
+                                                <option value="3">Việc làm</option>
+                            
+                                                <option value="4">Giáo dục nghề nghiệp</option>
+                            
+                                                <option value="5">Xuất khẩu lao động</option>
+                            
+                                                <option value="6">Bảo hiểm xã hôi</option>
+                            
+                                                <option value="7">Người có công</option>
+                            
+                                                <option value="8">Giảm nghèo</option>
+                            
+                                                <option value="9">Trẻ em</option>
+                            
+                                                <option value="10">Bảo trợ xã hội</option>
+                            
+                                                <option value="11">Bình đẳng giới</option>
+                            
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="label-text">Ngày ban hành</label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-text" for="content">Giai đoạn</label>
+                                    <div class="input">
+                            
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="giaidoan" value="0">Thực hiện trong 1 năm – 2 năm
+                                        </label>
+                            
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="giaidoan" value="1">Thực hiện trong 3 năm – 5 năm
+                                        </label>
+                            
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="giaidoan" value="2">Thực hiện trong 5 năm – 10 năm
+                                        </label>
+                            
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="giaidoan" value="3">Thực hiện trên 10 năm
+                                        </label>
+                            
+                                        <input type="hidden" id="giaidoan" value="">
                                     </div>
-                                    <div class="form-group -date">
-                                        <label class="label-text" for="fromdateNBH">Từ</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="dd/mm/yyyy"
-                                                id="fromdateNBH">
-                                        </div>
-                                        <label for="todateNBH" class="label-text -date">Đến</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="dd/mm/yyyy"
-                                                id="todateNBH">
-                                        </div>
+                                    <label class="label-text" for="content">Phạm vi</label>
+                                    <div class="input">
+                            
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="phamvi" value="0">Toàn quốc
+                                        </label>
+                            
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="phamvi" value="1">Vùng địa lý
+                                        </label>
+                            
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="phamvi" value="2">Vùng kinh tế
+                                        </label>
+                            
+                                        <input type="hidden" id="phamvi" value="">
                                     </div>
-                                    <div class="form-group ">
-                                        <label class="label-text">Ngày hiệu lực</label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-text" for="content">Trạng thái</label>
+                                    <div class="input">
+                            
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="trangthaiduan" value="1">Đã thực hiện
+                                        </label>
+                            
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="trangthaiduan" value="2">Đang thực hiện
+                                        </label>
+                            
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="trangthaiduan" value="3">Sẽ thực hiện
+                                        </label>
+                            
+                                        <input type="hidden" id="trangthaiduan" value="">
                                     </div>
-                                    <div class="form-group -date">
-                                        <label class="label-text" for="fromdateNHL">Từ</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="dd/mm/yyyy"
-                                                id="fromdateNHL">
-                                        </div>
-                                        <label class="label-text -date" for="todateNHL">Đến</label>
-                                        <div class="input">
-                                            <input type="text" class="form-control" placeholder="dd/mm/yyyy"
-                                                id="todateNHL">
-                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-text" for="fromdateNBH">Thời gian thực hiện</label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-text" for="txtThoiGianTu">Từ</label>
+                                    <div class="input">
+                                        <input type="text" class="form-control dateformat" placeholder="dd/mm/yyyy" id="txtThoiGianTu">
                                     </div>
-                                    <div class="form-group">
-                                        <label class="label-text" for="selCat">Lĩnh vực</label>
-                                        <div class="input">
-                                            <div class="select-custom">
-                                                <select name="" id="selCat" class="form-control">
-                                                    <option selected="selected" value="">-Tất cả-</option>
-                                                    <option value="34">Báo chí</option>
-                                                    <option value="35">Xuất bản</option>
-                                                    <option value="36">Bưu chính</option>
-                                                    <option value="37">Viễn thông</option>
-                                                    <option value="38">CNTT, điện tử</option>
-                                                    <option value="55">An toàn thông tin</option>
-                                                    <option value="39">Cơ cấu tổ chức</option>
-                                                    <option value="40">Lĩnh vực khác</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                    <label for="txtThoiGianDen" class="label-text -date">Đến</label>
+                                    <div class="input">
+                                        <input type="text" class="form-control dateformat" placeholder="dd/mm/yyyy" id="txtThoiGianDen">
                                     </div>
-                                    <div class="form-group">
-                                        <label class="label-text" for="selForm">Hình thức văn bản</label>
-                                        <div class="input">
-                                            <div class="select-custom">
-                                                <select name="" id="selForm" class="form-control">
-                                                    <option selected="selected" value="">-Tất cả-</option>
-                                                    <option value="34">Báo chí</option>
-                                                    <option value="35">Xuất bản</option>
-                                                    <option value="36">Bưu chính</option>
-                                                    <option value="37">Viễn thông</option>
-                                                    <option value="38">CNTT, điện tử</option>
-                                                    <option value="55">An toàn thông tin</option>
-                                                    <option value="39">Cơ cấu tổ chức</option>
-                                                    <option value="40">Lĩnh vực khác</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-text" for="agency">Cơ quan ban hành</label>
-                                        <div class="input">
-                                            <div class="select-custom">
-                                                <select name="" id="agency" class="form-control">
-                                                    <option selected="selected" value="">-Tất cả-</option>
-                                                    <option value="34">Báo chí</option>
-                                                    <option value="35">Xuất bản</option>
-                                                    <option value="36">Bưu chính</option>
-                                                    <option value="37">Viễn thông</option>
-                                                    <option value="38">CNTT, điện tử</option>
-                                                    <option value="55">An toàn thông tin</option>
-                                                    <option value="39">Cơ cấu tổ chức</option>
-                                                    <option value="40">Lĩnh vực khác</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="actions form-group">
-                                        <label class="label-text"></label>
-                                        <div class="input">
-                                            <button class="btn-submit btn-success btn">Tìm kiếm</button>
-                                            <button class="btn-cancel btn btn-default">Hủy bỏ</button>
-                                        </div>
+                                </div>
+                                <div class="actions form-group">
+                                    <label class="label-text"></label>
+                                    <div class="input">
+                                        <button class="btn-submit btn-success btn timkiem">Tìm kiếm</button>
+                                        <button class="btn-cancel btn btn-outline-secondary pD huytimkiem" data-toggle="collapse" data-target="#formFilter"
+                                            aria-expanded="true">Hủy</button>
                                     </div>
                                 </div>
                             </div>

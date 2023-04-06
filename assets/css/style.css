@@ -8668,6 +8668,10 @@ div.table {
 .box-dtvb .note {
   margin-bottom: 20px; }
 
+.box-dtvb .checkbox {
+  display: flex;
+  column-gap: 5px; }
+
 .box-dtvb .filter-form {
   background: #F3F4F5;
   padding: 20px;
@@ -8685,7 +8689,7 @@ div.table {
   width: 160px;
   padding: 0px 10px;
   font-weight: 600;
-  color: #444; }
+  padding-top: 7px; }
   .box-dtvb .label-text.-date {
     width: 60px;
     text-align: center; }
@@ -9269,6 +9273,10 @@ a {
   border-radius: 6px; }
   .btn .icon {
     font-size: 16px; }
+
+.btn-primary {
+  background-color: #035FB5;
+  border-color: #035FB5; }
 
 .btn-second {
   border: 1px solid #1672C9;

@@ -2011,6 +2011,11 @@
     .note {
         margin-bottom: 20px;
     }
+    .checkbox{
+        display: flex;
+        column-gap: 5px;
+
+    }
 
     .filter-form {
         background: $bg;
@@ -2038,8 +2043,7 @@
         width: 160px;
         padding: 0px 10px;
         font-weight: 600;
-        color: #444;
-
+        padding-top: 7px;
         &.-date {
             width: 60px;
             text-align: center;
@@ -2623,3 +2627,4 @@
     background-color: $main;
     color: #fff;
 }
+
