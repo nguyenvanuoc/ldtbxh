@@ -9432,9 +9432,9 @@ a {
   .sidebar-cat .title {
     padding: 10px 14px;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 16px;
-    border-bottom: 2px solid #035FB5; }
+    font-weight: 600;
+    background-color: #035FB5;
+    color: #fff; }
   .sidebar-cat ul {
     list-style: none;
     padding: 0px;
