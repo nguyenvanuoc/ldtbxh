@@ -9122,6 +9122,94 @@ div.table {
   background-color: #035FB5;
   color: #fff; }
 
+.box-sidebar-hnsk {
+  margin-bottom: 20px;
+  background-color: #F3F4F5; }
+  .box-sidebar-hnsk .title {
+    padding: 7px 10px;
+    border-radius: 8px;
+    background-color: #035FB5;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px; }
+  .box-sidebar-hnsk .body {
+    padding: 7px 10px; }
+  .box-sidebar-hnsk .info {
+    display: flex;
+    margin-bottom: 7px;
+    column-gap: 7px;
+    text-align: left; }
+  .box-sidebar-hnsk .icon {
+    font-size: 20px; }
+  .box-sidebar-hnsk .text-m {
+    flex: 1;
+    min-width: 0px; }
+
+.list-events .item {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: 1px solid #DFE3E8;
+  border-radius: 8px;
+  border-left: 4px solid #DFE3E8; }
+
+.list-events .info {
+  display: flex;
+  column-gap: 7px;
+  margin-top: 10px; }
+  .list-events .info .icon {
+    font-size: 20px;
+    color: #98A0AA; }
+
+.list-events .post-title > a {
+  font-size: 16px; }
+
+.article-detail .event-note {
+  border-radius: 8px;
+  padding: 10px 14px;
+  background-color: #F3F4F5;
+  font-weight: 600; }
+
+.article-detail .event-date {
+  width: 80px; }
+  .article-detail .event-date .month {
+    display: block;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: #ED1919;
+    color: #fff;
+    padding: 2px 5px;
+    text-align: center; }
+  .article-detail .event-date .ct {
+    border: 1px solid #DFE3E8;
+    display: block;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 2px 5px;
+    text-align: center; }
+  .article-detail .event-date .day {
+    font-size: 32px;
+    display: block; }
+
+.article-detail .event-info {
+  display: flex;
+  column-gap: 10px; }
+  .article-detail .event-info .info {
+    display: flex;
+    column-gap: 7px; }
+  .article-detail .event-info .icon {
+    font-size: 20px;
+    color: #98A0AA; }
+  .article-detail .event-info .text-m {
+    flex: 1;
+    min-width: 0px; }
+  .article-detail .event-info .text-content {
+    flex: 1;
+    min-width: 0px; }
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px; }

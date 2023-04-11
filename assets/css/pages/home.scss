@@ -2628,3 +2628,118 @@
     color: #fff;
 }
 
+.box-sidebar-hnsk{
+    margin-bottom: 20px;
+    background-color: $bg;
+    .title{
+        padding: 7px 10px;
+        border-radius: 8px;
+        background-color: $main;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+        color: #fff;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+    }
+    .body{
+        padding: 7px 10px;
+    }
+    .info{
+        display: flex;
+        margin-bottom: 7px;
+        column-gap: 7px;
+        text-align: left;
+        
+    }
+    .icon{
+        font-size: 20px;
+    }
+    .text-m{
+        flex: 1;
+        min-width: 0px;
+    }
+}
+
+.list-events{
+    .item{
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border: 1px solid $border;
+        border-radius: 8px;
+        border-left: 4px solid $border;
+    }
+    .info{
+        display: flex;
+        column-gap: 7px;
+        margin-top: 10px;
+        .icon{
+            font-size: 20px;
+            color: $textD;
+        }
+    }
+    .post-title{
+        >a{
+            font-size: 16px;
+        }
+    }
+}
+
+.article-detail{
+    .event-note{
+        border-radius: 8px;
+        padding: 10px 14px;
+        background-color: $bg;
+        font-weight: 600;
+
+    }
+    .event-date{
+        width: 80px;
+        .month{
+            display: block;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            background-color: $danger;
+            color: #fff;
+            padding: 2px 5px;
+            text-align: center;
+        }
+        .ct{
+            border: 1px solid $border;
+            display: block;
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            padding: 2px 5px;
+            text-align: center;
+            
+            
+        }
+        .day{
+            font-size: 32px;
+            display: block;
+        }
+    }
+    .event-info{
+        display: flex;
+        column-gap: 10px;
+
+        .info{
+            display: flex;
+            column-gap: 7px;
+        }
+        .icon{
+            font-size: 20px;
+            color: $textD;
+        }
+        .text-m{
+            flex: 1;
+            min-width: 0px;
+        }
+        .text-content{
+            flex: 1;
+            min-width: 0px;
+        }
+    }
+}
