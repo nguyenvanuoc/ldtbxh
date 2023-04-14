@@ -9210,6 +9210,16 @@ div.table {
     flex: 1;
     min-width: 0px; }
 
+.pb-tt .list-pb .item {
+  display: flex !important;
+  flex-direction: column;
+  row-gap: 7px; }
+
+.list-partners .list-item {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px; }
