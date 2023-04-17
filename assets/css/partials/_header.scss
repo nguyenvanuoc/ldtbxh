@@ -242,3 +242,42 @@
     justify-content: center;
     cursor: pointer;
 }
+
+.header-emagazine{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 18px 0 rgba(#000, 0.15);
+    align-items: center;
+    column-gap: 10px;
+    .back{
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        background-color: #c00;
+        font-size: 24px;
+        color: #fff;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        column-gap: 7px;
+        flex: 1;
+        min-width: 0px;
+        img{
+            height: 40px;
+        }
+        .text-m{
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #c00;
+            font-size: 12px;
+        }
+        .title{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
