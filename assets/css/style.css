@@ -7178,39 +7178,6 @@ div.table {
   justify-content: center;
   cursor: pointer; }
 
-.header-emagazine {
-  display: flex;
-  background-color: #fff;
-  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.15);
-  align-items: center;
-  column-gap: 10px; }
-  .header-emagazine .back {
-    align-self: stretch;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    background-color: #c00;
-    font-size: 24px;
-    color: #fff; }
-  .header-emagazine .logo {
-    display: flex;
-    align-items: center;
-    padding: 5px 10px;
-    column-gap: 7px;
-    flex: 1;
-    min-width: 0px; }
-    .header-emagazine .logo img {
-      height: 40px; }
-    .header-emagazine .logo .text-m {
-      text-transform: uppercase;
-      font-weight: 600;
-      color: #c00;
-      font-size: 12px; }
-    .header-emagazine .logo .title {
-      font-size: 18px;
-      font-weight: bold; }
-
 .main-wrapper {
   padding: 20px 0px; }
 
@@ -9355,42 +9322,6 @@ div.table {
 .box-dtvb .list-dtvb .item:nth-child(2n+2) {
   background-color: #fff; }
 
-.box-container-emagazine {
-  max-width: 1000px;
-  margin: 40px auto; }
-  .box-container-emagazine .post-title > a {
-    font-size: 18px; }
-  .box-container-emagazine .top-data {
-    position: relative; }
-    .box-container-emagazine .top-data .post-image {
-      height: 464px;
-      overflow: hidden; }
-    .box-container-emagazine .top-data:before {
-      display: block;
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      height: 100%;
-      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
-      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
-      background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
-      content: '';
-      z-index: 1; }
-    .box-container-emagazine .top-data .post-content {
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      color: #fff;
-      z-index: 2;
-      padding: 20px; }
-    .box-container-emagazine .top-data .post-title > a {
-      color: #fff;
-      font-size: 24px; }
-    .box-container-emagazine .top-data .post-date {
-      color: #fff; }
-
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px; }
@@ -9841,3 +9772,6 @@ a {
   .input-buttons .form-control {
     flex: 1;
     min-width: 0px; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3; }

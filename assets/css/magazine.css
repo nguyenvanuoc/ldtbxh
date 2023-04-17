@@ -1,0 +1,149 @@
+.header-emagazine {
+  display: flex;
+  background-color: #262626;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.15);
+  align-items: center;
+  column-gap: 10px;
+  color: #fff; }
+  .header-emagazine .share-box {
+    padding: 0px 10px; }
+  .header-emagazine .back {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    background-color: #c00;
+    font-size: 24px;
+    color: #fff; }
+  .header-emagazine .logo {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    column-gap: 7px;
+    flex: 1;
+    min-width: 0px; }
+    .header-emagazine .logo img {
+      height: 40px; }
+    .header-emagazine .logo .text-m {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #ffcb03;
+      font-size: 12px; }
+    .header-emagazine .logo .title {
+      font-size: 18px;
+      font-weight: bold; }
+  @media (max-width: 768px) {
+    .header-emagazine .logo .text-content {
+      display: none; } }
+
+.box-container-emagazine {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px; }
+  .box-container-emagazine .post-title > a {
+    font-size: 18px; }
+  .box-container-emagazine .top-data {
+    position: relative; }
+    .box-container-emagazine .top-data .post-image {
+      height: 464px;
+      overflow: hidden;
+      position: relative; }
+      .box-container-emagazine .top-data .post-image:before {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+        background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+        content: '';
+        z-index: 1; }
+    .box-container-emagazine .top-data .post-content {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      color: #fff;
+      z-index: 2;
+      padding: 20px; }
+    .box-container-emagazine .top-data .post-title > a {
+      color: #fff;
+      font-size: 24px; }
+    .box-container-emagazine .top-data .post-date {
+      color: #fff; }
+  @media (max-width: 768px) {
+    .box-container-emagazine .top-data:before {
+      display: none; }
+    .box-container-emagazine .top-data .post-image {
+      height: auto; }
+    .box-container-emagazine .top-data .post-title > a {
+      font-size: 16px;
+      color: #092D6A; }
+    .box-container-emagazine .top-data .post-content {
+      padding: 0px;
+      position: relative; }
+    .box-container-emagazine .top-data .post-date {
+      color: #98A0AA; }
+    .box-container-emagazine .post-title > a {
+      font-size: 16px; } }
+
+.article-magazine {
+  line-height: 1.5;
+  max-width: 991px;
+  padding: 40px 160px;
+  margin: auto;
+  color: #000;
+  font-size: 16px; }
+  .article-magazine img {
+    max-width: 100%;
+    height: auto; }
+  .article-magazine:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .article-magazine p {
+    margin: 10px 0px; }
+  .article-magazine .span-image-small {
+    margin: 0px -160px; }
+    .article-magazine .span-image-small img {
+      width: 100%; }
+    .article-magazine .span-image-small.align-overflow-right {
+      float: right;
+      margin: 0px;
+      margin-right: -100px;
+      max-width: 450px;
+      margin-left: 20px; }
+    .article-magazine .span-image-small.align-overflow-left {
+      float: left;
+      margin: 0px;
+      margin-left: -100px;
+      max-width: 450px;
+      margin-right: 20px; }
+    .article-magazine .span-image-small.align-full {
+      width: 100vw;
+      margin-left: calc((991px - 100vw)/2 -  160px); }
+  @media (max-width: 991px) {
+    .article-magazine {
+      width: 100%;
+      padding: 30px; }
+      .article-magazine .span-image-small.align-full {
+        margin: 0px -30px; }
+      .article-magazine .span-image-small {
+        margin: 0px -30px; }
+      .article-magazine .span-image-small.align-overflow-left {
+        margin-left: -30px;
+        max-width: 300px; }
+      .article-magazine .span-image-small.align-overflow-right {
+        margin-right: -30px;
+        max-width: 300px; } }
+  @media (max-width: 768px) {
+    .article-magazine .span-image-small.align-overflow-right, .article-magazine .span-image-small.align-overflow-left {
+      margin: 0px;
+      max-width: 100%;
+      text-align: center;
+      float: none; } }
