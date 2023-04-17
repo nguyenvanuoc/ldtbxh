@@ -36,6 +36,7 @@
             color: #fff;
             font-size: 12px;
             padding: 2px 5px;
+            text-align: left;
         }
         .image{
             img{
@@ -94,7 +95,14 @@
 }
 .pb-tt{
     width: 320px;
-     .slick-arrow{
+   
+    .box-pb{
+        padding: 10px;
+        background-color: $bg;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .slick-arrow{
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
@@ -107,11 +115,16 @@
 
         }
     }
-    
+    .image{
+        img{
+            width: 100%;
+            border-radius: 8px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+    }
     .list-pb{
-        border-radius: 8px;
-        padding: 10px;
-        background-color: $bg;
+        
         .item{
             display: flex;
             flex-direction: column;
@@ -122,14 +135,7 @@
             color: $border;
 
         }
-        .image{
-            img{
-                width: 100%;
-                border-radius: 8px;
-                max-height: 150px;
-                object-fit: cover;
-            }
-        }
+        
         .note{
             font-size: 12px;
             text-align: center;
@@ -341,8 +347,52 @@
         margin-bottom: 7px;
     }
 }
+.tabs-doc-en{
+    display: flex;
+    margin-bottom: 10px;
+    color: #fff;
 
+    a{
+        background-color: $main;
+        padding: 7px 14px;
+        color: #fff;
+        display: block;
+        &:first-child{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        &:last-child{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        &.active{
+            background-color: $text;
+        }
+    }
+}
+.list-doc-en{
 
+    .vb-item{
+        display: flex;
+        padding: 7px 0px;
+        column-gap: 10px;
+        border-bottom: 1px solid $border;
+    }
+    .actions{
+        display: flex;
+        .btn{
+            display: flex;
+            flex-direction: column;
+            border-radius: 0px;
+            color: $main;
+            font-weight: normal;
+            border-left: 1px solid $border;
+        }
+        .icon{
+            font-size: 32px;
+        }
+    }
+}
 .list-vb{
     position: relative;
     overflow: auto;
@@ -535,7 +585,19 @@
         }
     }
 }
+.list-partners-en{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    row-gap: 20px;
+    column-gap: 20px;
+    img{
+        width: 150px;
+        height: 80px;
+        object-fit: contain;
+    }
 
+}
 
 
 .list-tt-c3{
@@ -2754,4 +2816,61 @@
     display: flex !important;
     flex-wrap: wrap;
     justify-content: space-between; 
+}
+
+.box-dtvb{
+    .tab-content{
+        border: 1px solid $border;
+        
+    }
+    .top-detail{
+        display: flex;
+        padding: 10px 20px;
+        column-gap: 20px;
+        background-color: #f9f9f9;
+        padding-top:50px;
+        position: relative;
+        .featured{
+            position: absolute;
+            top: 10px;
+            right: -8px;
+            background-color: $success;
+            color: #fff;
+            padding: 3px 5px;
+            &:before{
+                content: "";
+                width: 0px;
+                height: 0px;
+                position: absolute;
+                right: 0px;
+                bottom: -8px;
+                border-bottom: 8px solid transparent;
+                border-left: 8px solid $success;
+            }
+
+        }
+        .text-content{
+            flex: 1;
+            min-width: 0px;
+        }
+        .icon{
+            font-size: 32px;
+            color: $main;
+        }
+        .top-date{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 7px;
+
+            width: 100%;
+        }
+        .info{
+            display: flex;
+            column-gap: 7px;
+            .ic{
+                font-size: 16px;
+            }
+        }
+    }
+    
 }
