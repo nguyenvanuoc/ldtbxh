@@ -9312,6 +9312,12 @@ div.table {
     .box-dtvb .top-detail .info .ic {
       font-size: 16px; }
 
+.box-dtvb .list-dtvb .item {
+  border-bottom: 1px solid #DFE3E8; }
+
+.box-dtvb .list-dtvb .item:nth-child(2n+2) {
+  background-color: #fff; }
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px; }
@@ -9737,6 +9743,21 @@ a {
     top: 0px;
     bottom: 0px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--desc-color); }
+
+.input-icon-right {
+  position: relative; }
+  .input-icon-right .form-control {
+    padding-right: 30px; }
+  .input-icon-right .icon {
+    width: 30px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    right: 0px;
     align-items: center;
     justify-content: center;
     color: var(--desc-color); }

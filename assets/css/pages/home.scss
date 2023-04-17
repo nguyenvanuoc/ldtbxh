@@ -2872,5 +2872,12 @@
             }
         }
     }
-    
+    .list-dtvb{
+        .item{
+            border-bottom: 1px solid $border;
+        }
+        .item:nth-child(2n+2){
+            background-color: #fff;
+        }
+    }
 }

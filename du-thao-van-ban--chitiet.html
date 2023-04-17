@@ -123,78 +123,133 @@
                     <div class="box-dtvb">
                         <div class="box-form"
                             style="background: #f6f7f8;padding: 20px;border:1px solid #e6e7e8;margin-bottom: 20px;border-radius: 8px;">
-                            <div class="row">
-                                <div class="col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <div class="label-text">Lĩnh vực văn bản</div>
-                                        <div class="input">
-                                            <div class="select-custom">
-                                                <select name="" id="" class="form-control">
-                                                    <option value=""></option>
-                                                </select>
-                                            </div>
-                                        </div>
+                            <div class="input-buttons">
+                                <input class="form-control" id="Keywords" name="Keywords" placeholder="Nhập nội dung văn bản cần tìm..." type="text"
+                                    value="">
+                                <button class="btn btn-danger">
+                                    <span class="isax-search-normal1"></span>
+                                    Tìm kiếm
+                                </button>
+                            </div>
+                            <div class="filter-form collapse mt-2" style="padding: 0px;" id="formFilter">
+                                <div class="note red">(gõ nội dung vào một trong các ô tương ứng và nhấn nút Tìm kiếm)</div>
+                                <div class="form-group">
+                                    <label for="id" class="label-text">Số hiệu</label>
+                                    <div class="input">
+                                        <input type="text" class="form-control" placeholder="Số hiệu" id="id">
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <div class="label-text">Loại văn bản</div>
-
-                                        <div class="select-custom input">
-                                            <select name="" id="" class="form-control">
-                                                <option value=""></option>
+                                <div class="form-group">
+                                    <label class="label-text" for="content">Trích yếu nội dung</label>
+                                    <div class="input">
+                                        <input type="text" class="form-control" placeholder="Trích yếu nội dung" id="content">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-text">Ngày ban hành</label>
+                                </div>
+                                <div class="form-group -date">
+                                    <label class="label-text" for="fromdateNBH">Từ</label>
+                                    <div class="input">
+                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="fromdateNBH">
+                                    </div>
+                                    <label for="todateNBH" class="label-text -date">Đến</label>
+                                    <div class="input">
+                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="todateNBH">
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <label class="label-text">Ngày hiệu lực</label>
+                                </div>
+                                <div class="form-group -date">
+                                    <label class="label-text" for="fromdateNHL">Từ</label>
+                                    <div class="input">
+                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="fromdateNHL">
+                                    </div>
+                                    <label class="label-text -date" for="todateNHL">Đến</label>
+                                    <div class="input">
+                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="todateNHL">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-text" for="selCat">Lĩnh vực</label>
+                                    <div class="input">
+                                        <div class="select-custom">
+                                            <select name="" id="selCat" class="form-control">
+                                                <option selected="selected" value="">-Tất cả-</option>
+                                                <option value="34">Báo chí</option>
+                                                <option value="35">Xuất bản</option>
+                                                <option value="36">Bưu chính</option>
+                                                <option value="37">Viễn thông</option>
+                                                <option value="38">CNTT, điện tử</option>
+                                                <option value="55">An toàn thông tin</option>
+                                                <option value="39">Cơ cấu tổ chức</option>
+                                                <option value="40">Lĩnh vực khác</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <div class="label-text">Năm phát hành</div>
-                                        <div class="input-icon-right">
-                                            <input type="text" class="form-control">
-                                            <span class="icon isax-calendar-21"></span>
+                                <div class="form-group">
+                                    <label class="label-text" for="selForm">Hình thức văn bản</label>
+                                    <div class="input">
+                                        <div class="select-custom">
+                                            <select name="" id="selForm" class="form-control">
+                                                <option selected="selected" value="">-Tất cả-</option>
+                                                <option value="34">Báo chí</option>
+                                                <option value="35">Xuất bản</option>
+                                                <option value="36">Bưu chính</option>
+                                                <option value="37">Viễn thông</option>
+                                                <option value="38">CNTT, điện tử</option>
+                                                <option value="55">An toàn thông tin</option>
+                                                <option value="39">Cơ cấu tổ chức</option>
+                                                <option value="40">Lĩnh vực khác</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <div class="label-text">đến</div>
-                                        <div class="input-icon-right">
-                                            <input type="text" class="form-control">
-                                            <span class="icon isax-calendar-21"></span>
+                                <div class="form-group">
+                                    <label class="label-text" for="agency">Cơ quan ban hành</label>
+                                    <div class="input">
+                                        <div class="select-custom">
+                                            <select name="" id="agency" class="form-control">
+                                                <option selected="selected" value="">-Tất cả-</option>
+                                                <option value="34">Báo chí</option>
+                                                <option value="35">Xuất bản</option>
+                                                <option value="36">Bưu chính</option>
+                                                <option value="37">Viễn thông</option>
+                                                <option value="38">CNTT, điện tử</option>
+                                                <option value="55">An toàn thông tin</option>
+                                                <option value="39">Cơ cấu tổ chức</option>
+                                                <option value="40">Lĩnh vực khác</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-12">
-                                    <div class="form-group">
-                                        <div class="label-text">Nội dung văn bản</div>
-                                        <div class="input">
-                                            <input type="text" class="form-control">
-                                        </div>
+                                <div class="actions form-group">
+                                    <label class="label-text"></label>
+                                    <div class="input">
+                                        <button class="btn-submit btn-success btn">Tìm kiếm</button>
+                                        <button class="btn-cancel btn btn-default">Hủy bỏ</button>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="label-text"></div>
-                                <div class="input">
-                                    <button class="btn btn-danger">
-                                        <span class="isax-search-normal1"></span>
-                                        Tìm kiếm
-                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="nav nav-tabs">
-                            <a href="#tabab1" class="nav-link active" data-toggle="tab">VĂN BẢN PHÁP LUẬT</a>
+                            <a href="#tabab1" class="nav-link active" data-toggle="tab">Tóm tắt</a>
+                            <a href="#tabab2" class="nav-link" data-toggle="tab">Toàn văn dự thảo</a>
+                            <a href="#tabab3" class="nav-link" data-toggle="tab">Hồ sơ dự án</a>
+                            <a href="#tabab3" class="nav-link" data-toggle="tab">Văn bản liên quan</a>
+                            <a href="#tabab3" class="nav-link" data-toggle="tab">Ý kiến người dân</a>
+                            <a href="#tabab3" class="nav-link" data-toggle="tab">Ý kiến chuyên gia</a>
                         </div>
                         <div class="tab-content">
-                            <div class="list-dtvb">
-                                <div class="top-detail item">
+                            <div class="tab-pane active" id="tabab1">
+                                <div class="top-detail">
                                     <div class="featured">
                                         Đang lấy ý kiến của Bộ
                                     </div>
                                     <div class="icon isax-document-text-11">
-                                
+
                                     </div>
                                     <div class="text-content">
                                         <div class="info">
@@ -202,121 +257,29 @@
                                                 <div class="post-date">Ngày bắt đầu lấy ý kiến: 09/04/2023</div>
                                                 <div class="post-date">Ngày hết hạn: 08/06/2023</div>
                                             </div>
-                                
+                                        
                                         </div>
-                                        <h3 class="post-title"><a href="#" class="f16">Quy định về quản lý, vận hành và sử dụng hệ thống thông tin bảo
-                                                trợ xã hội và giảm nghèo</a></h3>
-                                
-                                        <div class="info"><span class="ic isax-category1"></span> Lĩnh vực văn bản: Bảo trợ xã hội</div>
+                                        <h3 class="post-title"><a href="#" class="f16">Quy định về quản lý, vận hành và sử dụng hệ thống thông tin bảo trợ xã hội và giảm nghèo</a></h3>
+                                        
+                                        <div class="info"><span class="ic isax-category1"></span>  Lĩnh vực văn bản: Bảo trợ xã hội</div>
                                         <div class="info"> <span class="ic isax-document1"></span> Loại văn bản: Thông tư</div>
                                     </div>
                                 </div>
-                                <div class="top-detail item">
-                                    <div class="featured">
-                                        Đang lấy ý kiến của Bộ
-                                    </div>
-                                    <div class="icon isax-document-text-11">
-                                
-                                    </div>
-                                    <div class="text-content">
-                                        <div class="info">
-                                            <div class="top-date">
-                                                <div class="post-date">Ngày bắt đầu lấy ý kiến: 09/04/2023</div>
-                                                <div class="post-date">Ngày hết hạn: 08/06/2023</div>
-                                            </div>
-                                
-                                        </div>
-                                        <h3 class="post-title"><a href="#" class="f16">Quy định về quản lý, vận hành và sử dụng hệ thống thông tin bảo
-                                                trợ xã hội và giảm nghèo</a></h3>
-                                
-                                        <div class="info"><span class="ic isax-category1"></span> Lĩnh vực văn bản: Bảo trợ xã hội</div>
-                                        <div class="info"> <span class="ic isax-document1"></span> Loại văn bản: Thông tư</div>
-                                    </div>
-                                </div>
-                                <div class="top-detail item">
-                                    <div class="featured">
-                                        Đang lấy ý kiến của Bộ
-                                    </div>
-                                    <div class="icon isax-document-text-11">
-                                
-                                    </div>
-                                    <div class="text-content">
-                                        <div class="info">
-                                            <div class="top-date">
-                                                <div class="post-date">Ngày bắt đầu lấy ý kiến: 09/04/2023</div>
-                                                <div class="post-date">Ngày hết hạn: 08/06/2023</div>
-                                            </div>
-                                
-                                        </div>
-                                        <h3 class="post-title"><a href="#" class="f16">Quy định về quản lý, vận hành và sử dụng hệ thống thông tin bảo
-                                                trợ xã hội và giảm nghèo</a></h3>
-                                
-                                        <div class="info"><span class="ic isax-category1"></span> Lĩnh vực văn bản: Bảo trợ xã hội</div>
-                                        <div class="info"> <span class="ic isax-document1"></span> Loại văn bản: Thông tư</div>
-                                    </div>
+                                <div class="article p-4">
+                                    <h3>Tóm tắt</h3>
+                                    <p>Ban hành Thông tư quy định về quản lý, vận hành và sử dụng hệ thống thông tin bảo trợ xã hội và giảm nghèo.</p>
                                 </div>
                             </div>
-                            <div class="actions">
-                                <button class="btn block fullw py-3 text-desc">BẤM ĐỂ XEM TIẾP</button>
+                            <div class="tab-pane" id="tabab2">
+                                <div class="article p-4">
+                                    <h3>Tóm tắt</h3>
+                                    <p>Ban hành Thông tư quy định về quản lý, vận hành và sử dụng hệ thống thông tin bảo trợ xã hội và giảm nghèo.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-12">
-                    <div class="box-sidebar">
-                        <div class="head">Ý KIẾN NỔI BẬT</div>
-                        <div class="body p-3">
-                            <div class="item">
-                                <div class="post-title">
-                                    <a href="#">Công ty Ô tô Toyota Việt Nam</a>
-                                </div>
-                                <div class="post-desc mb-1">* Nội dung vướng mắc: Thời gian huấn luyện đào tạo cho các khóa học an toàn hiện tại đang rất dài .. <a href="#">Xem tiếp</a></div>
-                                <div class="post-date">
-                                    <span class="isax-clock-11"></span> 05/04/2023
-                                </div>
-                            </div>
-                            <div class="divider-gray my-2"></div>
-                            <div class="item">
-                                <div class="post-title">
-                                    <a href="#">Đỗ Khắc Quý</a>
-                                </div>
-                                <div class="post-desc mb-1">Đồng ý PÁ2 vì NLĐ phải kéo dài tuổi nghỉ hưu mà vẫn đóng BH cho đến khi được nghỉ hưu theo lộ trình ...<a href="#">Xem tiếp</a></div>
-                                <div class="post-date">
-                                    <span class="isax-clock-11"></span> 05/04/2023
-                                </div>
-                            </div>
-                            <div class="divider-gray my-2"></div>
-                            <div class="item">
-                                <div class="post-title">
-                                    <a href="#">Công ty Ô tô Toyota Việt Nam</a>
-                                </div>
-                                <div class="post-desc mb-1">* Nội dung vướng mắc: Thời gian huấn luyện đào tạo cho các khóa học an toàn hiện tại đang rất dài .. <a href="#">Xem tiếp</a></div>
-                                <div class="post-date">
-                                    <span class="isax-clock-11"></span> 05/04/2023
-                                </div>
-                            </div>
-                            <div class="divider-gray my-2"></div>
-                            <div class="item">
-                                <div class="post-title">
-                                    <a href="#">Công ty Ô tô Toyota Việt Nam</a>
-                                </div>
-                                <div class="post-desc mb-1">* Nội dung vướng mắc: Thời gian huấn luyện đào tạo cho các khóa học an toàn hiện tại đang rất dài .. <a href="#">Xem tiếp</a></div>
-                                <div class="post-date">
-                                    <span class="isax-clock-11"></span> 05/04/2023
-                                </div>
-                            </div>
-                            <div class="divider-gray my-2"></div>
-                            <div class="item">
-                                <div class="post-title">
-                                    <a href="#">Công ty Ô tô Toyota Việt Nam</a>
-                                </div>
-                                <div class="post-desc mb-1">* Nội dung vướng mắc: Thời gian huấn luyện đào tạo cho các khóa học an toàn hiện tại đang rất dài .. <a href="#">Xem tiếp</a></div>
-                                <div class="post-date">
-                                    <span class="isax-clock-11"></span> 05/04/2023
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="box-sidebar">
                         <div class="head">TIN TỨC LIÊN QUAN</div>
                         <div class="body p-3">

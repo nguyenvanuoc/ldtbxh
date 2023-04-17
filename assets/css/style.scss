@@ -524,6 +524,23 @@ a{
         color: var(--desc-color);
     }
 }
+.input-icon-right{
+    position: relative;
+    .form-control{
+        padding-right: 30px;
+    }
+    .icon{
+        width: 30px;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        display: flex;
+        right: 0px;
+        align-items: center;
+        justify-content: center;
+        color: var(--desc-color);
+    }
+}
 
 .input-buttons{
     display: flex;
