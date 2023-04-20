@@ -9199,8 +9199,12 @@ div.table {
     padding: 7px 10px;
     border: 0px;
     color: #fff; }
+  .box-sidebar-hnsk a {
+    color: #fff !important; }
   .box-sidebar-hnsk .ht-title {
     text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000; }
+    .box-sidebar-hnsk .ht-title a {
+      color: #fff; }
   .box-sidebar-hnsk .info {
     display: flex;
     margin-bottom: 7px;
