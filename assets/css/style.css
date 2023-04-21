@@ -7117,7 +7117,7 @@ div.table {
         background-color: #F3F4F5; }
     .header .menus a {
       display: block;
-      font-size: 14px;
+      font-size: 13px;
       text-decoration: none;
       padding: 7px 20px; }
       .header .menus a:hover {
@@ -7179,7 +7179,8 @@ div.table {
   cursor: pointer; }
 
 .main-wrapper {
-  padding: 20px 0px; }
+  padding: 20px 0px;
+  min-height: calc(100vh - 362px); }
 
 .top-news-box {
   display: flex;
