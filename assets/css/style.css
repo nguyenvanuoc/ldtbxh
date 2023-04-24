@@ -7472,6 +7472,10 @@ div.table {
   .list-doc-en .actions .icon {
     font-size: 32px; }
 
+.list-doc-en .text-content {
+  flex: 1;
+  min-width: 0px; }
+
 .list-vb {
   position: relative;
   overflow: auto; }

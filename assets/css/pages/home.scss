@@ -400,6 +400,10 @@
             font-size: 32px;
         }
     }
+    .text-content{
+        flex: 1;
+        min-width: 0px;
+    }
 }
 .list-vb{
     position: relative;
