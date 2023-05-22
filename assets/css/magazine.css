@@ -54,6 +54,8 @@
       height: 464px;
       overflow: hidden;
       position: relative; }
+      .box-container-emagazine .top-data .post-image img {
+        height: 100%; }
       .box-container-emagazine .top-data .post-image:before {
         display: block;
         position: absolute;

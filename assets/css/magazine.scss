@@ -75,6 +75,9 @@
             height: 464px;
             overflow: hidden;
             position: relative;
+            img{
+                height: 100%;
+            }
             &:before{
                 display: block;
                 position: absolute;
