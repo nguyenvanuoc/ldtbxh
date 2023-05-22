@@ -1,6 +1,6 @@
 .header-emagazine {
   display: flex;
-  background-color: #262626;
+  background-color: #035FB5;
   box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.15);
   align-items: center;
   column-gap: 10px;
@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     width: 40px;
-    background-color: #c00;
+    background-color: rgba(0, 0, 0, 0.2);
     font-size: 24px;
     color: #fff; }
   .header-emagazine .logo {
@@ -41,6 +41,11 @@
   max-width: 1000px;
   margin: 40px auto;
   padding: 20px; }
+  .box-container-emagazine .post-image img {
+    height: 200px; }
+    @media (max-width: 991px) {
+      .box-container-emagazine .post-image img {
+        height: 160px; } }
   .box-container-emagazine .post-title > a {
     font-size: 18px; }
   .box-container-emagazine .top-data {
@@ -81,6 +86,8 @@
       display: none; }
     .box-container-emagazine .top-data .post-image {
       height: auto; }
+      .box-container-emagazine .top-data .post-image img {
+        height: auto; }
     .box-container-emagazine .top-data .post-title > a {
       font-size: 16px;
       color: #092D6A; }

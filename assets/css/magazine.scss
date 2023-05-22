@@ -1,7 +1,7 @@
 @import "partials/vars";
 .header-emagazine{
     display: flex;
-    background-color: #262626;
+    background-color: $main;
     box-shadow: 0 0 18px 0 rgba(#000, 0.15);
     align-items: center;
     column-gap: 10px;
@@ -15,7 +15,7 @@
         align-items: center;
         justify-content: center;
         width: 40px;
-        background-color: #c00;
+        background-color: rgba(#000,0.2);
         font-size: 24px;
         color: #fff;
     }
@@ -55,6 +55,15 @@
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
+    .post-image{
+        img{
+            height: 200px;
+            @media(max-width:991px){
+                height: 160px;
+            }
+        }
+        
+    }
     .post-title{
         >a{
             font-size: 18px;
@@ -110,6 +119,9 @@
             }
             .post-image{
                 height: auto;
+                img{
+                    height: auto;
+                }
             }
             .post-title{
                 >a{
