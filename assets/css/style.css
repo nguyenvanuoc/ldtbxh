@@ -9645,6 +9645,10 @@ a {
       font-size: 20px;
       color: #20976C; }
 
+@media (max-width: 768px) {
+  .article .title-news {
+    font-size: 22px; } }
+
 .table-content {
   overflow: auto; }
 
