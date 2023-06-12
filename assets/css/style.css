@@ -7592,8 +7592,11 @@ div.table {
   justify-content: space-between; }
 
 .list-partners .item {
-  width: calc(25% - 10px);
+  width: calc(16.6667% - 5px);
   margin-bottom: 20px; }
+  @media (max-width: 1100px) {
+    .list-partners .item {
+      width: calc(33.333% - 5px); } }
 
 .list-partners a {
   display: flex;
@@ -7602,7 +7605,7 @@ div.table {
   border: 1px solid #DFE3E8;
   column-gap: 10px;
   height: 100%;
-  padding: 10px;
+  padding: 5px 5px;
   font-weight: 500;
   color: #092D6A; }
   .list-partners a:hover {
@@ -9290,7 +9293,8 @@ div.table {
 
 .article-detail .event-info {
   display: flex;
-  column-gap: 10px; }
+  column-gap: 10px;
+  flex-wrap: wrap; }
   .article-detail .event-info .info {
     display: flex;
     column-gap: 7px; }
@@ -9302,7 +9306,19 @@ div.table {
     min-width: 0px; }
   .article-detail .event-info .text-content {
     flex: 1;
-    min-width: 0px; }
+    min-width: 300px; }
+  .article-detail .event-info .logo-box {
+    display: flex;
+    max-width: 200px;
+    flex-direction: column; }
+    .article-detail .event-info .logo-box img {
+      width: 100%;
+      object-fit: contain; }
+  .article-detail .event-info .share-box {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    flex-wrap: wrap; }
 
 .pb-tt .list-pb .item {
   display: flex !important;
