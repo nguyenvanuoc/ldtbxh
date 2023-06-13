@@ -844,14 +844,14 @@
                 content: "";
                 height: 1px;
                 position: absolute;
-                left: 50%;
+                right: 50%;
                 width: calc(100% + 10px);
                 top: -25px;
                 margin: auto;
                 background-color: $main;
                 
             }
-            &:last-child{
+            &:first-child{
                 &:before{
                     display: none;
                 }
@@ -866,6 +866,14 @@
                 right: 0px;
                 margin: auto;
                 background-color: $main;
+            }
+            &.no-line{
+                &:before{
+                    display: none;
+                }
+                &:after{
+                    display: none;
+                }
             }
         }
     }
@@ -883,6 +891,9 @@
         text-transform: uppercase;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
+        height: 68px;
+        overflow: hidden;
+        
     }
     .panel-body{
         padding: 0px;

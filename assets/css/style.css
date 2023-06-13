@@ -7829,12 +7829,12 @@ div.table {
       content: "";
       height: 1px;
       position: absolute;
-      left: 50%;
+      right: 50%;
       width: calc(100% + 10px);
       top: -25px;
       margin: auto;
       background-color: #035FB5; }
-    .co-cau-to-chuc .list-child-cctc .item:last-child:before {
+    .co-cau-to-chuc .list-child-cctc .item:first-child:before {
       display: none; }
     .co-cau-to-chuc .list-child-cctc .item:after {
       content: "";
@@ -7846,6 +7846,10 @@ div.table {
       right: 0px;
       margin: auto;
       background-color: #035FB5; }
+    .co-cau-to-chuc .list-child-cctc .item.no-line:before {
+      display: none; }
+    .co-cau-to-chuc .list-child-cctc .item.no-line:after {
+      display: none; }
 
 .co-cau-to-chuc .panel {
   border: 1px solid #DFE3E8;
@@ -7860,7 +7864,9 @@ div.table {
   font-weight: 600;
   text-transform: uppercase;
   border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px; }
+  border-bottom-right-radius: 0px;
+  height: 68px;
+  overflow: hidden; }
 
 .co-cau-to-chuc .panel-body {
   padding: 0px; }
