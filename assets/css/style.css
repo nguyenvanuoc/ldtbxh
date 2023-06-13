@@ -7869,7 +7869,8 @@ div.table {
   color: #092D6A;
   padding: 7px 10px;
   display: block;
-  border-bottom: 1px solid #DFE3E8; }
+  border-bottom: 1px solid #DFE3E8;
+  padding-right: 20px; }
   .co-cau-to-chuc a:hover {
     background-color: #F3F4F5; }
 
