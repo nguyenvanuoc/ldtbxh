@@ -7589,7 +7589,7 @@ div.table {
 .list-partners .list-item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  column-gap: 5px; }
 
 .list-partners .item {
   width: calc(16.6667% - 5px);
@@ -9334,8 +9334,7 @@ div.table {
 
 .list-partners .list-item {
   display: flex !important;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  flex-wrap: wrap; }
 
 .list-partners .slick-dots {
   list-style: none;
